@@ -3,6 +3,7 @@
     border-top: 1px solid #49274b;
     max-width: 260px;
     color: white;
+    flex: 0.3;
 }
 
 .siderbar-header{
