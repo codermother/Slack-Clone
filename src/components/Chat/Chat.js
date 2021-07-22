@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import StarBorderOutlineIcon from "@material-ui/icons/StarBorderOutlined";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import db from "../../firebase";
+import Message from "../Message/Message";
+import ChatInput from "./ChatInput/ChatInput";
 
 function Chat() {
   const { roomId } = useParams();
@@ -27,7 +29,7 @@ function Chat() {
   }, [roomId]);
 
   console.log(roomDetails);
-  console.log(roomMessages);
+  console.log("MESSAGES", roomMessages);
 
   return (
     <div className="chat">
@@ -44,6 +46,18 @@ function Chat() {
           </p>
         </div>
       </div>
+      <div className="chat-messages">
+        {roomMessages.map(({ message, timestamp, user, userImage }) => (
+          <Message
+            message={message}
+            timestamp={timestamp}
+            user={user}
+            userImage={userImage}
+            key={timestamp}
+          />
+        ))}
+      </div>
+      <ChatInput channelName={roomDetails?.name} channelId={roomId} />
     </div>
   );
 }
