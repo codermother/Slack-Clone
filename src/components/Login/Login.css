@@ -32,3 +32,12 @@
 .login-container > button:hover {
 	background-color: darkgreen;
 }
+
+@media only screen and (max-width: 600px) {
+   
+	.login-container {
+		padding: 50px;
+		margin-bottom: 50px;
+	}
+	
+}

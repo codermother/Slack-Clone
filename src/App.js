@@ -26,7 +26,13 @@ function App() {
                   <Chat />
                 </Route>
                 <Route path="/">
-                  <h1>welcome</h1>
+                  <div className="information">
+                    <h4>Welcome!</h4>
+                    <p>
+                      You can add new channels and send realtime messages to the
+                      channels
+                    </p>
+                  </div>
                 </Route>
               </Switch>
             </div>

@@ -11,7 +11,7 @@
 .chatInput > form > input {
 	position: fixed;
 	bottom: 30px;
-	width: 70%;
+	width: 60%;
 	border: 1px solid gray;
 	border-radius: 3px;
 	padding: 20px;
@@ -20,4 +20,11 @@
 .chatInput > form > button {
 	display: none;
 
+}
+
+@media only screen and (max-width: 450px) {
+   
+	.chatInput > form > input {
+		width: 40%;
+	}
 }

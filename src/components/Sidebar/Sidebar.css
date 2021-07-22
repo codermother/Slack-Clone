@@ -19,6 +19,7 @@
     font-size: 18px;
     background-color: white;
     border-radius: 999px;
+    margin-left: 10px;
 }
 
 .sidebar-info{
@@ -49,4 +50,13 @@
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid #49274b
+}
+
+@media only screen and (max-width: 550px) {
+   
+	
+.siderbar-header > .MuiSvgIcon-root{
+ 
+  margin-left: 10px;
+}
 }

@@ -7,3 +7,12 @@ body{
   display: flex;
   height: 100vh;
 }
+
+.information{
+  margin: 15px 10px;
+}
+
+.information >p{
+  margin-top: 10px;
+  font-size: 15px;
+}

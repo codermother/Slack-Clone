@@ -26,3 +26,11 @@
 	font-weight: 300;
 	font-size: 13px;
 }
+
+
+@media only screen and (max-width: 400px) {
+   
+	.message-info > h4 {
+		margin-top: 10px;
+	}
+}
